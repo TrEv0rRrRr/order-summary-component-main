@@ -1,0 +1,137 @@
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 0 40px;
+}
+
+.main__div-order {
+  padding: 0 30px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  margin-bottom: 15px;
+}
+
+.w-900-darkb {
+  font-weight: var(--w-900);
+  color: var(--Dark-blue);
+}
+
+.div-order__p {
+  line-height: 28px;
+}
+
+.main__div-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(240, 16%, 96%);
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.div-price__div {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.music_icon {
+  width: 100%;
+  max-width: 48px;
+  max-height: 48px;
+}
+
+.p__plan-type {
+  margin-bottom: 3px;
+}
+
+.p__change-plan {
+  color: var(--Bright-blue);
+  font-weight: var(--w-700);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.main__div-buttons {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 15px;
+  width: 100%;
+}
+
+.main__div-price-btns {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+button {
+  border-radius: 15px;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  background: transparent;
+  font-weight: var(--w-900);
+  font-size: 1rem;
+}
+
+.div__btn-proceed {
+  background-color: var(--Bright-blue);
+  color: var(--Very-pale-blue);
+  font-weight: var(--w-700);
+  box-shadow: 0px 14px 20px -12px rgba(81, 70, 199, 0.5);
+}
+
+.div__btn-cancel {
+  color: var(--Desaturated-blue);
+  font-size: 0.85rem;
+}
+
+.div__btn-proceed:hover {
+  background-color: var(--hover);
+}
+
+.div__btn-cancel:hover {
+  color: hsl(224, 34%, 74%);
+}
+
+.p__change-plan:hover {
+  color: var(--hover);
+  text-decoration: none;
+}
+
+@media screen and (max-width: 490px) {
+  main {
+    padding: 0 20px;
+    gap: 20px;
+  }
+
+  .main__div-order {
+    padding: 0 5px;
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-wrap: pretty;
+  }
+
+  h1 {
+    font-size: 1.55rem;
+  }
+
+  .main__div-price {
+    padding: 15px;
+  }
+
+  .main__div-price-btns {
+    justify-content: stretch;
+    margin-bottom: 0;
+    gap: 30px;
+  }
+}

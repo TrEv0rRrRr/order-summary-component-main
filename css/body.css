@@ -1,0 +1,64 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --hover: hsl(245, 70%, 65%);
+
+  --w-500: 500;
+  --w-700: 700;
+  --w-900: 900;
+}
+
+body {
+  background-color: var(--Pale-blue);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1rem;
+  font-weight: var(--w-500);
+  color: var(--Desaturated-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+}
+
+.container {
+  background-color: var(--Very-pale-blue);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  min-width: 20rem;
+  min-height: 43rem;
+  max-width: 30rem;
+  max-height: 48rem;
+  box-shadow: 0px 20px 80px -65px #000;
+  z-index: 1000;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: 10;
+  top: -1px;
+  left: -1px;
+  width: 100%;
+}
+
+@media screen and (max-width: 490px) {
+  .container {
+    min-width: 18rem;
+    max-width: 20rem;
+    min-height: 37rem;
+  }
+}
